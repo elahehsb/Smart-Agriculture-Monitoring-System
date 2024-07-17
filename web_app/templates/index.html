@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agriculture Data Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Agriculture Data Analysis</h1>
+    <button onclick="fetchData()">Get Sensor Data</button>
+    <button onclick="runPrediction()">Run Prediction</button>
+    <pre id="output"></pre>
+
+    <script>
+        function fetchData() {
+            fetch('/api/sensors')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+                });
+        }
+
+        function runPrediction() {
+            fetch('/api/predict')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('output').innerText = data.result;
+                });
+        }
+    </script>
+</body>
+</html>
