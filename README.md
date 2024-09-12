@@ -2,6 +2,7 @@
 
 ##### Overview
 
+
 This project involves developing a comprehensive Smart Agriculture Monitoring System that leverages IoT sensors, data analysis, machine learning, and cloud-based deployment to monitor and optimize agricultural practices. The system will gather data from various sensors placed in the field, process and analyze the data, and provide actionable insights through an interactive web interface.
 
 ##### System Architecture
