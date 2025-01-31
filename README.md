@@ -8,6 +8,7 @@ This project involves developing a comprehensive Smart Agriculture Monitoring Sy
 ##### System Architecture
 Components:
 
+
 ###### 1. IoT Sensors: Collecting real-time data on soil moisture, temperature, humidity, etc.
 ###### 2. Data Ingestion: Acquiring data from IoT sensors and transmitting it to the cloud.
 ###### 3. Data Processing: Using Apache Kafka and Apache Spark for real-time processing.
